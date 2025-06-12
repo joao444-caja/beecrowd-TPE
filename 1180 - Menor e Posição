@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <limits.h>
+int main() {
+    int N;
+    int i;
+    int menorValor;
+    int posicaoMenor;
+    scanf("%d", &N);
+    int X[N];
+    menorValor = INT_MAX;
+    posicaoMenor = 0;
+    for (i = 0; i < N; i++) {
+        scanf("%d", &X[i]);
+        if (X[i] < menorValor) {
+            menorValor = X[i];
+            posicaoMenor = i;
+        }
+    }
+    printf("Menor valor: %d\n", menorValor);
+    printf("Posicao: %d\n", posicaoMenor);
+    return 0;
+}
