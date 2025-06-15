@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int total_dias;
+    scanf("%d", &total_dias);
+    int anos = total_dias / 365;
+    int dias_restantes_apos_anos = total_dias % 365;
+    int meses = dias_restantes_apos_anos / 30;
+    int dias = dias_restantes_apos_anos % 30;
+    printf("%d ano(s)\n", anos);
+    printf("%d mes(es)\n", meses);
+    printf("%d dia(s)\n", dias);
+    return 0;
+}
